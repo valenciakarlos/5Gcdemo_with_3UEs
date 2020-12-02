@@ -30,7 +30,7 @@ sudo apt -y install git
 
 Clone this repository:
 ```
-git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo2-Exp1.git
+git clone https://github.com/valenciakarlos/NetSoft2020-Tutorial4-Demo2-Exp1.git
 ```
 
 Install Ansible:
