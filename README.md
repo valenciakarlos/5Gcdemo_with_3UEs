@@ -45,6 +45,8 @@ Run ```ifconfig``` and get the name of **internet network interface**, like as i
     <img src="images/if_config.PNG"/> 
 </p>
 
+All the configuration files for the network functions are built using ansible. You can access the default values inside the playbook file ``` Deploy5GCandUESim.yml ``` in section **vars**.
+
 Run the following Ansible playbook (password for sudo is required):
 ```
 cd 5Gcdemo_with_3UEs && ansible-playbook -K Deploy5GCandUESim.yml  -e  "internet_network_interface=<< internet network interface name>>"
@@ -197,4 +199,4 @@ cat free5gc-stage-1/install/etc/free5gc/free5gc.conf
     <img src="images/free5gc_conf_2.png"/> 
 </p>
 
-All the configuration files is built by automated way with ansible. You can access the default values inside the playbook file ``` Demo2Exp1.yml ``` in section **vars**.
+
