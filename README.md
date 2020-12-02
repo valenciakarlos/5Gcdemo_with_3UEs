@@ -32,7 +32,7 @@ sudo apt -y install git
 
 Clone this repository:
 ```
-git clone https://github.com/valenciakarlos/NetSoft2020-Tutorial4-Demo2-Exp1.git
+git clone https://github.com/valenciakarlos/5Gcdemo_with_3UEs
 ```
 
 Install Ansible:
@@ -47,7 +47,7 @@ Run ```ifconfig``` and get the name of **internet network interface**, like as i
 
 Run the following Ansible playbook (password for sudo is required):
 ```
-cd NetSoft2020-Tutorial4-Demo2-Exp1 && ansible-playbook -K Demo2Exp1.yml  -e  "internet_network_interface=<< internet network interface name>>"
+cd 5Gcdemo_with_3UEs && ansible-playbook -K Demo2Exp1.yml  -e  "internet_network_interface=<< internet network interface name>>"
 ```
 
 Check if the containers are up:
