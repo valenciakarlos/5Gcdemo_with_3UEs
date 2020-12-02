@@ -47,7 +47,7 @@ Run ```ifconfig``` and get the name of **internet network interface**, like as i
 
 Run the following Ansible playbook (password for sudo is required):
 ```
-cd 5Gcdemo_with_3UEs && ansible-playbook -K Demo2Exp1.yml  -e  "internet_network_interface=<< internet network interface name>>"
+cd 5Gcdemo_with_3UEs && ansible-playbook -K Deploy5GCandUESim.yml  -e  "internet_network_interface=<< internet network interface name>>"
 ```
 
 Check if the containers are up:
