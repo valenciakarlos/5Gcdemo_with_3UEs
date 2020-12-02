@@ -1,4 +1,6 @@
-# NetSoft2020-Tutorial4-Demo2-Exp1
+
+Forked from: https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo1-Exp1/blob/master/Demo1Exp1.yml
+## Demostration of 3 UEs connected through a gNB towards Free5GC 5G Core running on docker containers and Orchestrated with Ansible
 
 ## Expected result
 After installation, nine containers are available, two of then running User Equipment (UE) and Evolved Node B (eNB) and the others running the elements of 5ht Generation Core Network. As illustrated in the figure below, UE can establish an internet connection, provided through combining functionality of all components. This environment is useful for studies relatated to RAN combined with the 5ht Generation Core Network.
