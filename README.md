@@ -16,7 +16,7 @@ The installation can be done directly over the host operating system (OS) or ins
 * CPU type: x86-64 (specific model and number of cores only affect performance)
 * RAM: 4 GB
 * Disk space: 40 GB
-* Ubuntu 18.04 LTS
+* Ubuntu 18.04 LTS or later. 
 
 **Steps**
 
@@ -48,6 +48,16 @@ Run ```ifconfig``` and get the name of **internet network interface**, like as i
 Run the following Ansible playbook (password for sudo is required):
 ```
 cd 5Gcdemo_with_3UEs && ansible-playbook -K Deploy5GCandUESim.yml  -e  "internet_network_interface=<< internet network interface name>>"
+```
+
+In my lab the interface with connectivity to the internet is eno1 as show below. so the command would go:
+```
+root@amd1:~/NetSoft2020-Tutorial4-Demo2-Exp1# ip add sh eno1
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 4c:d9:8f:38:97:6d brd ff:ff:ff:ff:ff:ff
+    inet 172.17.12.137/24 brd 172.17.12.255 scope global eno1
+root@amd1:~/5Gcdemo_with_3UEs# ansible-playbook -K Deploy5GCandUESim.yml -e "internet_network_interface='eno1'"
+SUDO password:
 ```
 
 Check if the containers are up:
